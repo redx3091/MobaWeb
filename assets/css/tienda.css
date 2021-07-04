@@ -57,7 +57,7 @@
     .producto-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding-left: 41px;
+        padding-left: 20px;
     }
     .selector{
         margin-left: 150px;

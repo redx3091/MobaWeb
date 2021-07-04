@@ -1,0 +1,58 @@
+.conte-login{
+    width: 100%;
+    height: 650px;
+}
+
+.conte-login h1{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+    font-family: "Akwe Pro", Medium;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    line-height: 55px;
+}
+
+.log-form{
+    padding-top: 30px;
+    background-color: #F4F3F3;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.in-email{
+    width: 200px;
+    height: 30px ;
+    border: 0px;
+    border-radius: 15px;
+}
+
+.in-pass{
+    width: 171px;
+    height: 30px;
+    border: 0px;
+    border-radius: 15px;
+}
+
+.login label{
+    font-size: 16px;
+    margin-left: 20px;
+    font-family: "Akwe Pro", Light;
+}
+
+.btn-login{
+    cursor: pointer;
+    justify-content: center;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    margin-left: 99px;
+    margin-top: 30px;
+    background-color: #ffcb05;
+    border: 0px;
+    font-family: "Akwe Pro", Light;
+}

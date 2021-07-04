@@ -1,0 +1,76 @@
+.confirmado-pedido{
+    width: 100%;
+    height: 800px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Akwe Pro", Light;
+    color: #434142;
+}
+
+.datos-envios{
+    margin: 60px;
+}
+
+.tabla-confirm-producto{
+    margin: 60px;
+}
+
+.confirmado-producto{
+    border: 1px solid #e9e9e9;
+    border-spacing: 0px !important;
+    width: 400px;
+    text-align: center;
+}
+
+.confirmado-producto thead{
+    background-color: #F4F3F3;
+}
+
+.confirmado-producto th{
+    height: 60px;
+}
+
+.confirmado-producto td{
+    border-top: 1px solid #e9e9e9;
+}
+
+.confirmado-producto td a{
+    text-decoration: none;
+    color: #434142;
+}
+
+.datos-env{
+    border: 1px solid #e9e9e9;
+    border-spacing: 0px !important;
+    width: 400px;
+    text-align: justify;
+}
+
+.datos-env thead{
+    background-color: #F4F3F3;
+}
+
+.datos-env th{
+    height: 60px;
+}
+
+.datos-env td{
+    height: 42px;
+    border-top: 1px solid #e9e9e9;
+}
+
+@media screen and (max-width: 900px) {
+    .confirmado-pedido{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .datos-env{
+        width: 360px;
+    }
+
+    .confirmado-producto{
+        width: 360px;
+    }
+}

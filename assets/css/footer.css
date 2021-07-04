@@ -1,0 +1,53 @@
+.footer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffcb05;
+  
+}
+.footer img {
+  width: 90px;
+}
+
+.img-footer {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.text-footer {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.text-footer p {
+  font-family: "Akwe Pro", Light;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase; 
+  font-size: 14px;
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .text-footer p {
+    display: flex;
+    align-items: center;
+  }
+  .text-footer {
+    display: flex;
+    align-items: center;
+  }
+}

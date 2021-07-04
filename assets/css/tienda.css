@@ -1,0 +1,72 @@
+.tienda{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Akwe Pro", Light;
+}
+
+.selector{
+    display: flex;
+    margin-top: 30px;
+    margin-block-start: 30px;
+    justify-content: flex-end;
+    margin-left: 1134px;
+}
+
+.producto-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 100px;
+}
+
+.producto-tienda{
+    margin: 20px;
+}
+
+.precio-tienda{
+    font-family: "Akwe Pro", Medium;
+    color: #434142e3;
+    font-size: 17px;
+}
+.producto-tienda h3{
+    color: #434142e3;
+    font-size: 20px;
+}
+
+.img-producto-tienda{
+    width: 300px;
+}
+
+.btn-anadir{
+    display: block;
+    width: 120px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    height: 36px;
+    background-color: #ffcb05;
+    text-decoration: none;
+    color: #434142e3;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .producto-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 41px;
+    }
+    .selector{
+        margin-left: 150px;
+    }
+    .img-producto-tienda{
+        width: 100px;
+    }
+    .btn-anadir{
+        width: 95px;
+    }
+
+}

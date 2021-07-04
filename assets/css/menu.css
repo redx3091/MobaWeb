@@ -1,0 +1,63 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  padding: 10px;
+}
+ul li a {
+  color: #434142;
+  text-decoration: none;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-transform: uppercase;
+  font-family: "Akwe Pro", Medium;
+  font-size: 20px;
+}
+
+.menu ul li:hover a {
+  border-bottom: 2px solid #ffcb05;
+}
+.container-btn-carrito{
+  width: 100px;
+}
+.container-btn-carrito a{
+  width: 80px;
+  background-color: #ffcb05;
+  border-radius: 30px;
+}
+.flotante img{
+  width: 40px;
+  
+}
+.flotante {
+  display:flex;
+  justify-content: center;
+  position:fixed;
+  z-index: 999999999;
+  bottom:820px;
+  right:5px;
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    margin-top: 12px;
+  }
+  ul li {
+    text-align: center;
+    padding: 0px;
+  }
+  ul li a {
+    padding: 6px;
+    font-size: 14px;
+  }
+  .flotante{
+    bottom: 750px;
+    right: 6px;
+  }
+}

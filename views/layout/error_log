@@ -1,0 +1,92 @@
+[03-Jul-2021 00:44:42 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/u8osrhh24hhv/public_html/config/db.php on line 5
+[03-Jul-2021 00:44:42 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/config/db.php on line 6
+[03-Jul-2021 00:44:42 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/models/sliderModel.php on line 49
+[03-Jul-2021 00:44:42 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/u8osrhh24hhv/public_html/config/db.php on line 5
+[03-Jul-2021 00:44:42 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/config/db.php on line 6
+[03-Jul-2021 00:44:42 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/models/productoModel.php on line 115
+[03-Jul-2021 00:44:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on bool in /home/u8osrhh24hhv/public_html/views/inicio/content-central.php:7
+Stack trace:
+#0 /home/u8osrhh24hhv/public_html/controllers/inicioController.php(18): require_once()
+#1 /home/u8osrhh24hhv/public_html/index.php(32): inicioController->index()
+#2 {main}
+  thrown in /home/u8osrhh24hhv/public_html/views/inicio/content-central.php on line 7
+[03-Jul-2021 00:45:41 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/u8osrhh24hhv/public_html/config/db.php on line 5
+[03-Jul-2021 00:45:41 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/config/db.php on line 6
+[03-Jul-2021 00:45:41 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/models/sliderModel.php on line 49
+[03-Jul-2021 00:45:41 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/u8osrhh24hhv/public_html/config/db.php on line 5
+[03-Jul-2021 00:45:41 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/config/db.php on line 6
+[03-Jul-2021 00:45:41 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/models/productoModel.php on line 115
+[03-Jul-2021 00:45:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on bool in /home/u8osrhh24hhv/public_html/views/inicio/content-central.php:7
+Stack trace:
+#0 /home/u8osrhh24hhv/public_html/controllers/inicioController.php(18): require_once()
+#1 /home/u8osrhh24hhv/public_html/index.php(32): inicioController->index()
+#2 {main}
+  thrown in /home/u8osrhh24hhv/public_html/views/inicio/content-central.php on line 7
+[03-Jul-2021 00:45:42 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/u8osrhh24hhv/public_html/config/db.php on line 5
+[03-Jul-2021 00:45:42 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/config/db.php on line 6
+[03-Jul-2021 00:45:42 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/models/sliderModel.php on line 49
+[03-Jul-2021 00:45:42 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/u8osrhh24hhv/public_html/config/db.php on line 5
+[03-Jul-2021 00:45:42 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/config/db.php on line 6
+[03-Jul-2021 00:45:42 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/models/productoModel.php on line 115
+[03-Jul-2021 00:45:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on bool in /home/u8osrhh24hhv/public_html/views/inicio/content-central.php:7
+Stack trace:
+#0 /home/u8osrhh24hhv/public_html/controllers/inicioController.php(18): require_once()
+#1 /home/u8osrhh24hhv/public_html/index.php(32): inicioController->index()
+#2 {main}
+  thrown in /home/u8osrhh24hhv/public_html/views/inicio/content-central.php on line 7
+[03-Jul-2021 00:45:43 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/u8osrhh24hhv/public_html/config/db.php on line 5
+[03-Jul-2021 00:45:43 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/config/db.php on line 6
+[03-Jul-2021 00:45:43 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/models/sliderModel.php on line 49
+[03-Jul-2021 00:45:43 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/u8osrhh24hhv/public_html/config/db.php on line 5
+[03-Jul-2021 00:45:43 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/config/db.php on line 6
+[03-Jul-2021 00:45:43 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/models/productoModel.php on line 115
+[03-Jul-2021 00:45:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on bool in /home/u8osrhh24hhv/public_html/views/inicio/content-central.php:7
+Stack trace:
+#0 /home/u8osrhh24hhv/public_html/controllers/inicioController.php(18): require_once()
+#1 /home/u8osrhh24hhv/public_html/index.php(32): inicioController->index()
+#2 {main}
+  thrown in /home/u8osrhh24hhv/public_html/views/inicio/content-central.php on line 7
+[03-Jul-2021 00:45:56 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/u8osrhh24hhv/public_html/config/db.php on line 5
+[03-Jul-2021 00:45:56 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/config/db.php on line 6
+[03-Jul-2021 00:45:56 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/models/sliderModel.php on line 49
+[03-Jul-2021 00:45:56 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/u8osrhh24hhv/public_html/config/db.php on line 5
+[03-Jul-2021 00:45:56 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/config/db.php on line 6
+[03-Jul-2021 00:45:56 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/models/productoModel.php on line 115
+[03-Jul-2021 00:45:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on bool in /home/u8osrhh24hhv/public_html/views/inicio/content-central.php:7
+Stack trace:
+#0 /home/u8osrhh24hhv/public_html/controllers/inicioController.php(18): require_once()
+#1 /home/u8osrhh24hhv/public_html/index.php(32): inicioController->index()
+#2 {main}
+  thrown in /home/u8osrhh24hhv/public_html/views/inicio/content-central.php on line 7
+[03-Jul-2021 00:46:24 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/u8osrhh24hhv/public_html/config/db.php on line 5
+[03-Jul-2021 00:46:24 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/config/db.php on line 6
+[03-Jul-2021 00:46:24 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/models/sliderModel.php on line 49
+[03-Jul-2021 00:46:24 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/u8osrhh24hhv/public_html/config/db.php on line 5
+[03-Jul-2021 00:46:24 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/config/db.php on line 6
+[03-Jul-2021 00:46:24 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/models/productoModel.php on line 115
+[03-Jul-2021 00:46:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on bool in /home/u8osrhh24hhv/public_html/views/inicio/content-central.php:7
+Stack trace:
+#0 /home/u8osrhh24hhv/public_html/controllers/inicioController.php(18): require_once()
+#1 /home/u8osrhh24hhv/public_html/index.php(32): inicioController->index()
+#2 {main}
+  thrown in /home/u8osrhh24hhv/public_html/views/inicio/content-central.php on line 7
+[03-Jul-2021 00:53:57 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/u8osrhh24hhv/public_html/config/db.php on line 5
+[03-Jul-2021 00:53:57 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/config/db.php on line 6
+[03-Jul-2021 00:53:57 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/models/sliderModel.php on line 49
+[03-Jul-2021 00:53:57 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/u8osrhh24hhv/public_html/config/db.php on line 5
+[03-Jul-2021 00:53:57 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/config/db.php on line 6
+[03-Jul-2021 00:53:57 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/u8osrhh24hhv/public_html/models/productoModel.php on line 115
+[03-Jul-2021 00:53:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on bool in /home/u8osrhh24hhv/public_html/views/inicio/content-central.php:7
+Stack trace:
+#0 /home/u8osrhh24hhv/public_html/controllers/inicioController.php(18): require_once()
+#1 /home/u8osrhh24hhv/public_html/index.php(32): inicioController->index()
+#2 {main}
+  thrown in /home/u8osrhh24hhv/public_html/views/inicio/content-central.php on line 7
+[03-Jul-2021 10:02:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_transient() in /home/u8osrhh24hhv/public_html/deleteme.wpvu3e.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u8osrhh24hhv/public_html/deleteme.wpvu3e.php on line 16
+[03-Jul-2021 10:02:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_transient() in /home/u8osrhh24hhv/public_html/deleteme.wp9k8f.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/u8osrhh24hhv/public_html/deleteme.wp9k8f.php on line 16

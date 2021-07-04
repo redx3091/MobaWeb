@@ -1,0 +1,59 @@
+.cont-crear{
+    width: 100%;
+    height: auto;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-crear{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.crear{
+    width: 600px;
+    font-size: 16px;
+    color: #434142;
+    background-color: #F4F3F3;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Akwe Pro", Light;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.crear input{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 30px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.crear select{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 30px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.btn-crear{
+    cursor: pointer;
+    text-align: center;
+    margin-left: 170px;
+    border-radius: 30px !important;
+    background-color: #ffcb05;
+    width: 150px;
+    height: 50px !important;
+}
+
+@media screen and (max-width: 900px) {
+
+}
+

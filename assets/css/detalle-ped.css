@@ -1,0 +1,83 @@
+.detalle-pedido{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.detalle-pedido h1{
+    font-family: "Akwe Pro", Medium;
+    font-size: 25px;
+}
+
+.cambio-estado{
+    padding-top: 30px;
+}
+
+.tablas-detalle{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.tablas-detalle h3{
+    font-family: "Akwe Pro", Medium;
+    font-size: 25px;
+    text-align: center;
+}
+
+.dat-envio{
+    width: 500px;
+    margin-right: 30px;
+    text-align: justify;
+    background-color: #F4F3F3;
+    border-radius: 20px;
+}
+
+.dat-envio th{
+    height: 40px;
+}
+.dat-envio td{
+    height: 50px;
+    border-top: 1px solid rgb(233, 233, 233);
+}
+
+.det-prod{
+    width: 500px;
+    margin-left: 30px;
+    text-align: center;
+    border-spacing: 0px !important;
+    background-color: #F4F3F3;
+    border-radius: 20px;
+}
+
+.det-prod th {
+    height: 40px;
+}
+
+.det-prod td{
+    border-top: 1px solid rgb(233, 233, 233);
+}
+
+@media screen and (max-width: 900px) {
+    .detalle-pedido{
+        height: auto;
+    }
+    .tablas-detalle{
+        flex-direction: column;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .dat-envio{
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .det-prod{
+        width: 100%;
+        margin-left: 0px;
+    }
+}

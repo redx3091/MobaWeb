@@ -1,0 +1,74 @@
+.hacer-pedido{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Akwe Pro", Light;
+    color: #434142;
+}
+
+.hacer-pedido h1{
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.hacer-pedido p{
+    margin-top: 10px;
+    padding-right: 300px;
+}
+
+.datos-envio{
+    display: flex;
+    width: 500px;
+    background-color: #F4F3F3;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.datos-envio h3{
+    text-align: center;
+}
+
+.form-hacer{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.form-hacer input{
+    height: 30px;
+    border-radius: 20px;
+    border: 0px;
+    margin-top: 10px;
+}
+
+.btn-confir-hacer{
+    background-color: #ffcb05;
+}
+
+.btn-regresar{
+    display: block;
+    padding-top: 5px;
+    width: 200px;
+    text-align: center;
+    height: 30px;
+    background-color: #ffcb05;
+    text-decoration: none;
+    color: #434142;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .hacer-pedido{
+        padding: 10px;
+    }
+    .hacer-pedido p{
+        width: 100%;
+    }
+
+    .datos-envio{
+        width: 100%;
+    }
+}

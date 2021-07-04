@@ -1,0 +1,154 @@
+.contactanos{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.map{
+    width: 500px;
+    height: 280px;
+    border-radius: 9px;
+}
+.info-contactanos{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 360px;
+}
+
+.info-contactanos h1{
+    font-size: 30px;
+    text-align: left;
+    font-family: "Akwe Pro", Medium;
+    color: #434142;
+}
+.fa-map-marker-alt,
+.fa-phone-square-alt,
+.fa-instagram{
+    color: #ffcb05;
+}
+.fa-instagram{
+    font-size: 30px;
+}
+.info-contactanos p{
+    font-family: "Akwe Pro", Light;
+    font-size: 30px;
+    color: #434142;
+}
+
+.follow-instagram{
+    font-size: 30px;
+    font-family: "Akwe Pro", Light;
+    text-decoration: none;
+    color: #434142;
+}
+
+.contenedor-info{
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    align-items: center;
+}
+
+.formulario-contac{
+    width: 100%;
+    padding-left: 50px;
+    margin-right: 360px;
+}
+
+.form-contactanos{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    margin-right: 360px;
+    background-color: #F4F3F3;
+    border-radius: 5%;
+}
+
+.form-contactanos h1{
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Akwe Pro", Medium;
+    font-size: 30px;
+    color: #434142;
+}
+
+.form-contactanos input{
+    height: 70px;
+    width: 380px;
+    align-items: center;
+    border-radius: 9px;
+    font-family: "Akwe Pro", Light;
+    border-color: transparent;
+}
+.boton-form{
+    width: 150px !important;
+    height: 36px !important;
+    background-color: #ffcb05;
+    cursor: pointer;
+}
+
+.form-contactanos textarea{
+    width: 380px;
+    height: 250px;
+    border-radius: 9px;
+    border-color: transparent;
+}
+
+.form-contactanos label{
+    float: left;
+    font-family: "Akwe Pro", Light;
+}
+
+@media screen and (max-width: 900px) {
+    .contactanos{
+        flex-direction: column;
+    }
+
+    .info-contactanos{
+        margin-left: 30px;
+    }
+
+    .info-contactanos h1{
+        font-size: 15px;
+    }
+
+   .info-contactanos p{
+       font-size: 14px;
+   }
+
+   .info-contactanos a{
+       font-size: 15px;
+   }
+
+   .form-contactanos h1{
+       font-size: 15px;
+   }
+
+   .form-contactanos input {
+       width: 169px;
+   }
+
+   .form-contactanos textarea{
+       width: 169px;
+   }
+
+   .formulario-contac{
+       margin-right: 0px;
+       padding-left: 0px;
+   }
+
+   .map{
+       width: 280px;
+       height: 190px;
+   }
+
+    .form-contactanos{
+        width: 100%;
+    }
+}

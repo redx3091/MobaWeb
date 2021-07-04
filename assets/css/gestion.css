@@ -1,0 +1,75 @@
+
+.cont-gestion{
+    width: 50%;
+    margin: 20px;
+    color: #434142;
+    font-family: "Akwe Pro", Light;
+}
+.gest a{
+    padding-top: 22px;
+    width: 105px;
+    display: block;
+    color: #434142;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffcb05;
+    height: 60px;
+    border-radius: 30px;
+}
+.cont-table{
+    background-color: #F4F3F3;
+    padding: 20px;
+    border-radius: 20px;
+}
+.table-gestion{
+    color: #434142;
+    font-family: "Akwe Pro", Light;
+    justify-content: center;
+    padding: 10px;
+}
+.paginate{
+    display: flex;
+    margin: 0px !important;
+    justify-content: center;
+}
+.filterbox {
+    padding-bottom: 20px;
+}
+.filterbox input{
+   border: 0px;
+   border-radius: 20px;
+
+}
+.gestion-img{
+    width: 100px;
+    margin: 10px;
+}
+
+.img-gest{
+    margin: 10px;
+    width: 100px;
+}
+
+.tabla-gestion{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.tabla-gestion td{
+    border-top: 1px solid rgb(233, 233, 233);
+}
+
+div.paginate input[type='button'].active {
+    background-color: #ffcb05 !important;
+}
+
+@media screen and (max-width: 900px) {
+   .tabla-gestion{
+    display: block;
+    overflow-x: auto;
+   }
+   div.paginate input[type='button'] {
+    margin: 0px 0px !important;
+   }
+}

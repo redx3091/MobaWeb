@@ -1,0 +1,92 @@
+.destacados {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 70px;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  cursor: default;
+  transition: all 400ms ease;
+  border-radius: 5px;
+}
+.product:hover{
+  box-shadow: 5px 5px 5px 5px #f0f0f0;
+}
+
+.img-product {
+  width: 100%;
+  height: auto;
+  padding-right: 13px;
+  padding-left: 9px;
+}
+
+.destacados div h2 {
+  height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "Akwe Pro", Medium;
+  color: #434142;
+  font-size: 25px;
+  margin: auto;
+}
+
+.destacados div h3 {
+  width: 100px;
+  height: 20px;
+  color: #555555;
+  text-align: center;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: "Akwe Pro", Light;
+  margin: auto;
+}
+.destacados div p {
+  height: 10px;
+  color: #434142e3;
+  text-align: center;
+  font-family: "Akwe Pro", Medium;
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+
+.btn-container {
+  display: flex;
+  padding: 10px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffcb05;
+  border-color: 1px solid black;
+  width: 200px;
+  height: 30px;
+}
+.btn-container a {
+  text-decoration: none;
+  color: #434142;
+  font-family: "Akwe Pro", Medium;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 900px) {
+  .destacados {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    overflow-x: auto;
+  }
+  .product {
+    margin-bottom: 15px;
+    cursor: default;
+    transition: all 400ms ease;
+    border-radius: 5px;
+  }
+}

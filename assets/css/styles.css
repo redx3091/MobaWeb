@@ -1,0 +1,21 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-color: white;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.history-vi {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}

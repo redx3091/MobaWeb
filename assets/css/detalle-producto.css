@@ -1,0 +1,41 @@
+.detalles{
+    display: flex;
+    align-items: center;
+    height: 700px;
+    color: #434142;
+}
+.detail-product{
+    margin-left: 100px;
+}
+.detalles-producto{
+    margin-bottom: 90px;
+    margin-left: 50px;
+}
+.detalles-producto h1{
+    font-family: "Akwe Pro", Medium;
+    padding-bottom: 30px;
+}
+.detalles-producto p{
+    font-family: "Akwe Pro", Light;
+    margin-bottom: 80px;
+}
+.img-producto{
+    width: 550px;
+}
+.container-btn{
+    border-top: 1px solid rgb(226, 226, 226);
+    border-bottom: 1px solid rgb(226, 226, 226);
+    width: 300px;
+    padding: 20px;
+}
+
+.btn-detail{
+    display: block;
+    text-decoration: none;
+    color: #434142;
+    background-color: #ffcb05;
+    text-align: center;
+    padding: 17px;
+    border-radius: 30px;
+    height: 50px;
+}

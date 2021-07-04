@@ -40,8 +40,8 @@ ul li a {
   justify-content: center;
   position:fixed;
   z-index: 999999999;
-  bottom:765px;
-  right:5px;
+  /* bottom:765px;
+  right:30px; */
 }
 
 @media screen and (max-width: 900px) {
@@ -57,7 +57,7 @@ ul li a {
     font-size: 14px;
   }
   .flotante{
-    bottom: 630px;
-    right: 6px;
+    /* bottom: 630px;
+    right: 30px; */
   }
 }

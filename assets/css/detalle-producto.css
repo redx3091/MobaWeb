@@ -39,3 +39,22 @@
     border-radius: 30px;
     height: 50px;
 }
+
+@media screen and (max-width: 900px) {
+    .detalles{
+        flex-direction: column;
+        padding: 25px;
+    }
+    .img-producto{
+        width: 200px;
+    }
+    
+    .container-btn{
+        margin-right: 40px;
+    }
+
+    .detail-product{
+        margin-left: 0px;
+        padding: 15px;
+    }
+}

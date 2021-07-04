@@ -178,7 +178,7 @@ class Pedido{
         $sql = "SELECT nombre, apellidos, ciudad, departamento, pais, coste, direccion FROM pedidos WHERE id={$this->getId()} ";
         
         $pedido = $this->db->query($sql);
-        return $pedido->fetch_object();
+        return $pedido;
     }
 
     public function getProductosByPedido($id_pedido){
@@ -209,7 +209,7 @@ class Pedido{
 
     public function getOne(){
         $productos = $this->db->query("SELECT * FROM pedidos WHERE id={$this->getId()}");
-        return $productos->fetch_object();
+        return $productos;
     }
 
 }

@@ -2,10 +2,29 @@
     width: 100%;
     height: 800px;    
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: "Akwe Pro", Light;
     color: #434142;
+}
+
+.mensaje-confirmado h1{
+    font-family: "Akwe Pro", Medium;
+    font-size: 25px;
+}
+.mensaje-confirmado p, h3{
+    font-family: "Akwe Pro", Light;
+    font-size: 16px;
+}
+
+.datos-envios p, h3{
+    font-family: "Akwe Pro", Light;
+    font-size: 16px;
+}
+
+.ped-confir-datos{
+    display: flex;
+    flex-direction: row;
 }
 
 .datos-envios{
@@ -40,28 +59,19 @@
     color: #434142;
 }
 
-.datos-env{
-    border: 1px solid #e9e9e9;
-    border-spacing: 0px !important;
-    width: 400px;
-    text-align: justify;
-}
-
-.datos-env thead{
-    background-color: #F4F3F3;
-}
-
-.datos-env th{
-    height: 60px;
-}
-
-.datos-env td{
-    height: 42px;
-    border-top: 1px solid #e9e9e9;
-}
 
 @media screen and (max-width: 900px) {
+    .ped-confir-datos{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tabla-confirm-producto{
+        margin: 0px;
+    }
+
     .confirmado-pedido{
+        padding: 20px;
         flex-direction: column;
         height: auto;
     }

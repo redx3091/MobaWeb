@@ -9,19 +9,22 @@
 }
 .history-text {
   background-color: #c1c1c1;
-  width: 300px;
-  height: auto;
+  width: 350px;
+  height: 350px;
   padding: 35px;
   position: relative;
   right: 50px;
 }
 
 .history-text h3{
+  font-size: 35px;
   font-family: "Akwe Pro", Medium;
 }
 
 .history-text p{
   font-family: "Akwe Pro", Light;
+  text-align: justify;
+  font-size: 17px;
 }
 
 .history div img {

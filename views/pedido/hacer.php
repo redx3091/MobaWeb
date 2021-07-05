@@ -5,6 +5,7 @@
     </p>
     <br>
     <div class="datos-envio">
+    <br>
         <h3>Datos de envio</h3>
         <form action="<?= base_url ?>pedido/add" method="POST" class="form-hacer">
             <label for="nombres">Nombres:</label>

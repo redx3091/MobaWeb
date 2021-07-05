@@ -17,16 +17,16 @@
         <form action="#" method="POST" class="form-contactanos">
             <h1>ENVIANOS UN MENSAJE</h1> <br> <br>
             <label for="nombre">Nombre</label> <br>
-            <input type="text"> <br> <br>
+            <input type="text"> <br>
             <label for="nombre">Telefono</label> <br>
-            <input type="number"> <br> <br>
+            <input type="number"> <br>
             <label for="ciudad">Ciudad</label><br>
-            <input type="text"> <br> <br> <br>
+            <input type="text"> <br>
             <label for="email">E-mail</label><br>
-            <input type="text"> <br> <br>
+            <input type="text"> <br>
             <label for="mensaje">Mensaje</label> <br>
-            <textarea name="mensaje" id="" cols="30" rows="10"></textarea> <br> <br>
-            <input type="submit" value="Enviar" class="boton-form"> <br> <br>
+            <textarea name="mensaje" id="" cols="30" rows="10"></textarea> <br>
+            <input type="submit" value="Enviar" class="boton-form"> <br>
         </form>
     </div>
 </section>

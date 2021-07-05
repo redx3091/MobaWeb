@@ -3,6 +3,8 @@
   width: 100%;
   height: auto;
   margin-top: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .product {
   display: flex;

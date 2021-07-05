@@ -47,7 +47,7 @@
         <div class="total-carrito">
             <table class="tabla-total">
                 <tr>    
-                    <th>total del carrito</th>
+                    <th>Total del carrito</th>
                     <th></th>
                 </tr>
                 <tbody>

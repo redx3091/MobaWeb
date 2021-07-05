@@ -1,0 +1,14 @@
+@font-face {
+    font-family:  "Akwe Pro", Medium;
+    src: url(../Fonts/Akwe\ Pro\ Medium.otf);
+}
+
+@font-face {
+    font-family: "Akwe Pro", Light;
+    src: url(../Fonts/Akwe\ Pro\ Light.otf);
+}
+
+@font-face {
+    font-family: source-serif BOLD;
+    src: url(../Fonts/SourceSerifPro-Bold.ttf);
+}

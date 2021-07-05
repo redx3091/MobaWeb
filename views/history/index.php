@@ -4,15 +4,15 @@
             <h1>¿Quienes Somos?</h1><br>
             <p>
                 Somos una empresa de origen Colombiano
-                ubicada en la ciudad de Cúcuta,Norte de
+                ubicada en la ciudad de Cúcuta, Norte de
                 Santander, creada por economistas de la
                 Universidad de Pamplona, cuyo propósito
                 es el cultivo y comercialización del mejor
                 café apoyados por las habilidades y
-                destrezas de las comunidades vulnerables :
+                destrezas de las comunidades vulnerables:
                 Población Reinsertados del conflicto Armado,
                 comunidades Afrocolombianas, madres
-                solteras y población LGBTIQ+, entre otras
+                solteras y población LGBTIQ+, entre otras.
             </p>
         </div>
         <div class="qs-imagen">

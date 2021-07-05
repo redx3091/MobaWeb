@@ -77,7 +77,6 @@ class pedidoController{
         
         if(isset($_SESSION['id'])){
             $id_pedido = $_SESSION['id'];
-            var_dump($id_pedido);
             $pedido = new Pedido();
             // $pedido->setId($id_pedido);
             $pedido = $pedido->getOneByid($id_pedido->id);

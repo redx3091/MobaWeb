@@ -24,14 +24,15 @@
 .text-inicio div h3 {
   justify-content: left;
   padding: 0px 0px 0px 0px;
-  font-size: 30px;
+  font-size: 35px;
   text-transform: uppercase;
   font-family: "Akwe Pro", Medium;
 }
 .text-inicio div p {
   width: 100%;
   padding-bottom: 60px;
-  font-size: 20px;
+  text-align: justify;
+  font-size: 25px;
   font-family: "Akwe Pro", Light;
 }
 .text-inicio div img {

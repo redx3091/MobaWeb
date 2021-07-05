@@ -11,6 +11,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <title>Moba</title>
     <link rel="stylesheet" href="<?= base_url ?>assets/css/text-inicio.css">
+    <link rel="stylesheet" href="<?= base_url ?>assets/css/fonts.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="<?= base_url ?>assets/css/carrucel.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">

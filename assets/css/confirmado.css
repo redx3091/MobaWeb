@@ -7,6 +7,9 @@
     justify-content: center;
     color: #434142;
 }
+.mensaje-confirmado{
+    width: 714px;
+}
 
 .mensaje-confirmado h1{
     font-family: "Akwe Pro", Medium;
@@ -25,6 +28,8 @@
 .ped-confir-datos{
     display: flex;
     flex-direction: row;
+    width: 830px;
+    justify-content: center;
 }
 
 .datos-envios{

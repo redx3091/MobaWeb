@@ -22,7 +22,8 @@
 }
 
 .producto-tienda{
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .precio-tienda{
@@ -56,8 +57,14 @@
 
     .producto-container{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding-left: 20px;
+        grid-template-columns: repeat(2, 130px);
+        padding-left: 0px;
+        justify-content: center;
+    }
+    .producto-tienda{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .selector{
         margin-left: 150px;

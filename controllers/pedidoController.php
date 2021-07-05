@@ -10,7 +10,7 @@ class pedidoController{
     public function add(){
         
         if(isset($_SESSION['carrito'])){
-            $id = rand();
+            // $id = rand();
         
             $nombres = isset($_POST['nombres']) ? $_POST['nombres'] : false;
             $apellidos = isset($_POST['apellidos']) ? $_POST['apellidos'] : false;
@@ -28,7 +28,7 @@ class pedidoController{
 
             if($nombres && $apellidos &&  $ciudad && $departamento && $pais && $direccion && $telefono && $correo){
                 $pedido = new Pedido();
-                $pedido->setId($id);
+                // $pedido->setId($id);
                 $pedido->setNombres($nombres);
                 $pedido->setApellidos($apellidos);
                 $pedido->setNombreempresa($empresa);
@@ -47,13 +47,20 @@ class pedidoController{
 
                 //guardar relacion pedido
                 $save_relacion  = $pedido->save_relacion();
+
+
+                //obtener id del pedido 
+                $ped = new Pedido();
+                $pedido_id = $ped->getIDPedido();
                 // var_dump($pedido);
                 // var_dump($save);
                 // var_dump($save_relacion);
+                // var_dump($pedido_id);
                 // die();
+
                 if($save && $save_relacion){
                     $_SESSION['pedido'] = "complete";
-                    $_SESSION['id'] = $id;
+                    $_SESSION['id'] = $pedido_id;
                 }else{
                     $_SESSION['pedido'] = "failed";
                 }
@@ -70,12 +77,13 @@ class pedidoController{
         
         if(isset($_SESSION['id'])){
             $id_pedido = $_SESSION['id'];
+            var_dump($id_pedido);
             $pedido = new Pedido();
-            $pedido->setId($id_pedido);
-            $pedido = $pedido->getOneByid();
+            // $pedido->setId($id_pedido);
+            $pedido = $pedido->getOneByid($id_pedido->id);
             
             $productos_pedido = new Pedido();
-            $productos = $productos_pedido->getProductosByPedido($id_pedido);
+            $productos = $productos_pedido->getProductosByPedido($id_pedido->id);
         }
         
         // var_dump($_SESSION['id']);
@@ -100,7 +108,7 @@ class pedidoController{
 
             //update del pedido
             $pedido = new pedido();
-            $pedido->setId($id);
+            
             $pedido->setEstado($estado);
             $pedido= $pedido->edit();
 

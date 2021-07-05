@@ -17,7 +17,7 @@
         <?php if($pedido): ?>
         <h3>Detalles de tu pedido:</h3><br>
         <p>Nombre y apellido: <?= $pedido->nombre?> <?= $pedido->apellidos ?></p><br>
-        <p>Numero de pedido:<?= $id_pedido?> </p><br>
+        <p>Numero de pedido:<?= $id_pedido->id?> </p><br>
         <p>Pais: <?= $pedido->pais ?></p><br>
         <p>Departamento: <?= $pedido->departamento ?></p><br>
         <p>Ciudad: <?= $pedido->ciudad ?></p><br>

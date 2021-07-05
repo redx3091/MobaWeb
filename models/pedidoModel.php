@@ -139,7 +139,7 @@ class Pedido{
     }
 
     public function save(){
-        $sql = "INSERT INTO pedidos VALUES({$this->getId()}, '{$this->getNombres()}', '{$this->getApellidos()}', '{$this->getNombreempresa()}','{$this->getCiudad()}', '{$this->getDepartamento()}', '{$this->getPais()}', '{$this->getDireccion()}', {$this->getTelefono()}, '{$this->getEmail()}', {$this->getCoste()}, 'confirm', CURDATE(), CURTIME())";
+        $sql = "INSERT INTO pedidos VALUES(NULL, '{$this->getNombres()}', '{$this->getApellidos()}', '{$this->getNombreempresa()}','{$this->getCiudad()}', '{$this->getDepartamento()}', '{$this->getPais()}', '{$this->getDireccion()}', {$this->getTelefono()}, '{$this->getEmail()}', {$this->getCoste()}, 'confirm', CURDATE(), CURTIME())";
         $save = $this->db->query($sql);
 
         // echo $sql;
@@ -154,11 +154,21 @@ class Pedido{
         return $result;
     }
 
-    public function save_relacion(){
-        $sql = "SELECT id FROM pedidos ORDER BY hora DESC;";
+    public function getIDPedido(){
+        $sql = "SELECT id FROM pedidos ORDER BY id DESC LIMIT 1";
         $query = $this->db->query($sql);
-        $pedido_id = $query->fetch_object()->id;
+        
 
+        return $query->fetch_object();
+    }
+
+    public function save_relacion(){
+        $sql = "SELECT LAST_INSERT_ID() as 'pedido';";
+        $query = $this->db->query($sql);
+        $pedido_id = $query->fetch_object()->pedido;
+        
+        // var_dump($pedido_id);
+        // die;
         foreach($_SESSION['carrito'] as $elemento){
             $producto = $elemento['producto'];
             
@@ -174,8 +184,8 @@ class Pedido{
         return $result;
     }
 
-    public function getOneByid(){
-        $sql = "SELECT nombre, apellidos, ciudad, departamento, pais, coste, direccion FROM pedidos WHERE id={$this->getId()} ";
+    public function getOneByid($id){
+        $sql = "SELECT nombre, apellidos, ciudad, departamento, pais, coste, direccion FROM pedidos WHERE id={$id}";
         
         $pedido = $this->db->query($sql);
         return $pedido->fetch_object();

@@ -8,7 +8,7 @@
   align-items: center;
 }
 .history-text {
-  background-color: #c1c1c1;
+  background-color: #F4F3F3;
   width: 350px;
   height: 350px;
   padding: 35px;
@@ -47,6 +47,7 @@
     height: auto;
     position: inherit;
     margin-top: -4px;
+    
   }
 
   .history-text p {

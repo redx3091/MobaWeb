@@ -139,5 +139,21 @@ class pedidoController{
 
         
     }
+
+    public function consultarPedido(){
+
+        require_once 'views/pedido/consulta.php';
+    }
+    public function mi_pedido(){
+        $id_pedido = $_POST['numeropedido'];
+        if(isset($_POST['numeropedido'] )){
+            $pedido = new Pedido();
+            $pedidos = $pedido->getOnePed($id_pedido);
+
+            $ped = new Pedido();
+            $peds = $ped->getProductosByPedido($id_pedido);
+        }
+        require_once 'views/pedido/mi_pedido.php';
+    }
     
 }

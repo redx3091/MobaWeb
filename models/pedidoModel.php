@@ -185,10 +185,17 @@ class Pedido{
     }
 
     public function getOneByid($id){
-        $sql = "SELECT nombre, apellidos, ciudad, departamento, pais, coste, direccion FROM pedidos WHERE id={$id}";
+        $sql = "SELECT nombre, apellidos, ciudad, departamento, pais, coste, direccion, estado, telefono FROM pedidos WHERE id={$id}";
         
         $pedido = $this->db->query($sql);
         return $pedido->fetch_object();
+    }
+
+    public function getOnePed($id){
+        $sql = "SELECT nombre, apellidos, ciudad, departamento, pais, coste, direccion, estado, telefono FROM pedidos WHERE id={$id}";
+        
+        $pedido = $this->db->query($sql);
+        return $pedido;
     }
 
     public function getProductosByPedido($id_pedido){

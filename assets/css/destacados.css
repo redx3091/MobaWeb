@@ -59,14 +59,13 @@
 
 .btn-container {
   display: flex;
-  padding: 10px;
   border-radius: 20px;
   align-items: center;
   justify-content: center;
   background-color: #ffcb05;
-  border-color: 1px solid black;
   width: 200px;
   height: 30px;
+  margin-bottom: 15px;
 }
 .btn-container a {
   text-decoration: none;

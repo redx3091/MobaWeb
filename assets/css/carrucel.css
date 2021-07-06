@@ -15,11 +15,13 @@ body {
 }
 
 .swiper-wrapper{
+  width: 100% !important;
   transition-duration: 5500ms !important;
+  
 }
 
 .swiper-container {
-  width: 100%;
+  width: 1920px;
   height: 550px;
 }
 
@@ -27,8 +29,7 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  width: 1440px !important;
-  margin-right: 0px !important;
+  width: 100% !important;
 
   /* Center slide text vertically */
   display: -webkit-box;

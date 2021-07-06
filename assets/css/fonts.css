@@ -9,6 +9,6 @@
 }
 
 @font-face {
-    font-family: source-serif BOLD;
-    src: url(../Fonts/SourceSerifPro-Bold.ttf);
+    font-family: source-serif;
+    src: url(../Fonts/SourceSerifPro-Regular.ttf);
 }

@@ -24,12 +24,11 @@ ul li a {
   border-bottom: 2px solid #ffcb05;
 }
 .container-btn-carrito{
-  width: 100px;
+  width: 100%;
 }
 .container-btn-carrito a{
-  width: 80px;
-  background-color: #ffcb05;
-  border-radius: 30px;
+  width: 100%;
+  padding-right: 50px;
 }
 .flotante img{
   width: 40px;
@@ -37,11 +36,7 @@ ul li a {
 }
 .flotante {
   display:flex;
-  justify-content: center;
-  position:fixed;
-  z-index: 999999999;
-  /* bottom:765px;
-  right:30px; */
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 900px) {

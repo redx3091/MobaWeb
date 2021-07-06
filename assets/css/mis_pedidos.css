@@ -1,0 +1,134 @@
+/* Ventana consultas */
+.consulta{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-consulta h1{
+    font-size: 25px;
+    font-family: "Akwe Pro", Medium;
+    padding-bottom: 20px;
+}
+
+.cont-consulta{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F3F3;
+    border-radius: 20px;
+     height: 200px;
+}
+
+.form-consulta{
+    font-family: "Akwe Pro", Light;
+    font-size: 17px;
+}
+
+.form-consulta input{
+    border: 0px;
+    border-radius: 20px;
+    height: 30px;
+}
+
+.btn-consulta{
+    cursor: pointer;
+    justify-content: center;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    margin-left: 90px;
+    margin-top: 30px;
+    background-color: #ffcb05;
+    border: 0px;
+    font-family: "Akwe Pro", Light;
+}
+
+/* web consulta */
+.tu-pedido{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tu-pedido h1{
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: "Akwe Pro", Medium;
+    font-size: 25px;
+}
+
+.cont{
+    display: flex;
+    flex-direction: row;
+    font-family: "Akwe Pro", Light;
+}
+
+.table-datos{
+    width: 400px;
+    text-align: center;
+}
+
+.estado-ped{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #F4F3F3;
+    width: 400px;
+    margin-right: 40px;
+    border-spacing: 0px !important;
+}
+
+.estado-ped td{
+    border-top: 1px solid #e9e9e9;
+}
+
+.pedido-tu{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #F4F3F3;
+    width: 400px;
+    margin-left: 40px;
+    border-spacing: 0px !important;
+}
+
+.pedido-tu td{
+    border-top: 1px solid #e9e9e9;
+}
+
+.tables-prod{
+    width: 400px;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .tu-pedido{
+        padding: 40px;
+    }
+    .cont{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .table-datos{
+        width: 100%;
+    }
+    .tables-prod{
+        width: 100%;
+    }
+    .estado-ped{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .pedido-tu{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}

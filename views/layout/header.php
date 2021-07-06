@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="<?= base_url ?>assets/css/gestion-pedido.css">
     <link rel="stylesheet" href="<?= base_url ?>assets/css/detalle-ped.css">
     <link rel="stylesheet" href="<?= base_url ?>assets/css/view-history.css">
+    <link rel="stylesheet" href="<?= base_url ?>assets/css/mis_pedidos.css">
     <link 
         rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -60,6 +61,13 @@
             </div>
         </header>
         <!-- END CABECERA -->
+        <?php if(isset($_SESSION['admin'])):?>
+
+<?php else: ?>    
+    <div  class="container-btn-carrito">
+        <a href="<?= base_url ?>carrito/index" class="flotante"><img src="<?= base_url ?>assets/img/cart-plus-solid.svg" alt=""></a>
+    </div>
+<?php endif; ?>
         <!-- MENU -->
         <nav id="menu" class="menu">
             <ul class="nav">
@@ -89,14 +97,11 @@
                     <li id="contactanos">
                         <a href="<?= base_url ?>contacto/index">Contáctanos</a>
                     </li>
+                    <li>
+                        <a href="<?= base_url ?>pedido/consultarPedido">Tus pedidos</a>
+                    </li>
                 <?php endif; ?>
             </ul>
         </nav>
-        <?php if(isset($_SESSION['admin'])):?>
 
-        <?php else: ?>    
-        <div  class="container-btn-carrito">
-            <a href="<?= base_url ?>carrito/index" class="flotante"><img src="<?= base_url ?>assets/img/cart-plus-solid.svg" alt=""></a>
-        </div>
-        <?php endif; ?>
         <!-- END MENU -->

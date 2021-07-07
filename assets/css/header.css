@@ -8,7 +8,7 @@
   text-decoration: none;
   font-size: 70px;
   color: #434142;
-  font-family: source-serif BOLD;
+  font-family: 'Source Serif Pro', BOLD;
   padding-top: 35px;
 }
 .img-header {
@@ -28,7 +28,7 @@
   letter-spacing: 6.3px;
   margin-top: 1px;
   font-size: 13px;
-  font-family: bell-mt BOLD;
+  font-family: 'bell-mt' BOLD;
   color: #434142;
 }
 

@@ -30,7 +30,12 @@
                             <?= $producto->precio ?>
                         </td>
                         <td>
-                            <?= $elemento['unidades'] ?>
+                            
+                            <div class="updown-unidades">
+                                <a href="<?= base_url ?>carrito/down&index=<?= $indice ?>"><img src="<?= base_url ?>assets/img/minus-solid.svg" class="btn-minus"></a>
+                                <?= $elemento['unidades'] ?>
+                                <a href="<?= base_url ?>carrito/up&index=<?= $indice ?>"><img src="<?= base_url ?>assets/img/plus-solid.svg" class="btn-plus"></a>
+                            </div>
                         </td>
                         <td>
                             <a href="<?= base_url ?>carrito/remove&index=<?= $indice ?>"><img src="<?= base_url ?>assets/img/trash-alt-regular.svg" class="trash"></a>

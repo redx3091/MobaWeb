@@ -113,8 +113,15 @@ class productoController{
                         move_uploaded_file($file['tmp_name'], 'uploads/imgproduct/' . $filename);
                     }
                 }
-                
-                $save = $producto->save();
+                // die();
+                if(isset($_GET['id_p'])) {
+                    $id = $_GET['id_p'];
+                    $producto->setId($id);
+                    $save = $producto->edit();
+
+                }else{
+                    $save = $producto->save();
+                }
                 if($save){
                     $_SESSION['producto'] = 'complete';
                 }else{
@@ -127,5 +134,43 @@ class productoController{
             $_SESSION['producto'] = 'failed';
         }
         header('Location:' . base_url . "producto/gestion");
+    }
+
+    public function editar(){
+        Utils::isAdmin();
+        if (isset($_GET['id_p'])) {
+            $id = $_GET['id_p'];
+            $edit = true;
+
+            $producto = new Producto();
+            $producto->setId($id);
+            $pro = $producto->getOne();
+
+            require_once 'views/producto/crear.php';
+        } else {
+            header('Location:' . base_url . 'producto/gestion');
+        }
+    }
+
+    public function eliminar(){
+        Utils::isAdmin();
+
+        if (isset($_GET['id_p'])) {
+            $id_p = $_GET['id_p'];
+            $producto = new Producto();
+            $producto->setId($id_p);
+            // var_dump($producto);
+            // die();
+            $delete = $producto->delete();
+
+            if ($delete) {
+                $_SESSION['delete'] = 'complete';
+            } else {
+                $_SESSION['delete'] = 'failed';
+            }
+        } else {
+            $_SESSION['delete'] = 'failed';
+        }
+        header('Location:' . base_url . 'producto/gestion');
     }
 }

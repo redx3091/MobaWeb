@@ -9,6 +9,7 @@
     padding-top: 22px;
     width: 105px;
     display: block;
+    font-size: 15px;
     color: #434142;
     text-align: center;
     text-decoration: none;
@@ -62,6 +63,10 @@
 
 div.paginate input[type='button'].active {
     background-color: #ffcb05 !important;
+}
+
+.edit-btn{
+    width: 25px;
 }
 
 @media screen and (max-width: 900px) {

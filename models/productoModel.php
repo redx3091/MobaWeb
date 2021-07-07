@@ -2,7 +2,7 @@
 
 class Producto{
 
-    private $id;
+    private $id_p;
     private $tipo_id;
     private $nombre;
     private $descripcion;
@@ -18,7 +18,7 @@ class Producto{
 
     //Getters
     public function getId(){
-        return $this->id;
+        return $this->id_p;
     }
 
     public function getTipo_id(){
@@ -54,8 +54,8 @@ class Producto{
     }
 
     //Setters
-    public function setId($id){
-        $this->id = $id;
+    public function setId($id_p){
+        $this->id_p = $id_p;
     }
 
   
@@ -136,16 +136,48 @@ class Producto{
         return $productos;
     }
 
-    public function getAllbyOrderFecha($orden){
-    $sql = "SELECT * FROM productos INNER JOIN tipos ON productos.tipo_id = tipos.id_t ORDER BY fecha DESC";
-    $productos = $this->db->query($sql);
-    return $productos;
+    public function getAllbyOrderFecha(){
+        $sql = "SELECT * FROM productos INNER JOIN tipos ON productos.tipo_id = tipos.id_t ORDER BY fecha DESC";
+        $productos = $this->db->query($sql);
+        return $productos;
     }
-
-
     //obtener un producto de la base de datos por ID
     public function getOne(){
         $productos = $this->db->query("SELECT * FROM productos INNER JOIN tipos ON productos.tipo_id = tipos.id_t WHERE id_p={$this->getId()}");
         return $productos->fetch_object();
+    }
+
+    public function edit(){
+        $sql = "UPDATE productos SET tipo_id={$this->getTipo_id()}, nombre='{$this->getNombre()}', descripcion='{$this->getDescripcion()}', precio={$this->getPrecio()}, stock={$this->getStock()}  ";
+
+        if ($this->getImagen() != null) {
+            $sql .= ", imagen='{$this->getImagen()}'";
+        }
+
+        $sql .= " WHERE id_p={$this->id};";
+
+
+        $save = $this->db->query($sql);
+
+        // echo $sql;
+        // echo $this->db->error;
+        // die();
+
+        $result = false;
+        if ($save) {
+            $result = true;
+        }
+        return $result;
+    }
+
+    public function delete(){
+        $sql = "DELETE FROM  productos  WHERE  id_p={$this->id_p}";
+        $delete = $this->db->query($sql);
+
+        $result = false;
+        if ($delete) {
+            $result = true;
+        }
+        return $result;
     }
 }

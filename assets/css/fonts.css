@@ -1,14 +1,9 @@
 @font-face {
-    font-family:  "Akwe Pro", Medium;
-    src: url(../Fonts/Akwe\ Pro\ Medium.otf);
+    font-family: 'Akwe Pro', sans-serif;
+    src: url('http://fonts.cdnfonts.com/css/akwe-pro');
 }
 
 @font-face {
-    font-family: "Akwe Pro", Light;
-    src: url(../Fonts/Akwe\ Pro\ Light.otf);
-}
-
-@font-face {
-    font-family: source-serif;
-    src: url(../Fonts/SourceSerifPro-Regular.ttf);
+    font-family: 'Source Serif Pro', sans-serif;
+    src: url('http://fonts.cdnfonts.com/css/source-serif-pro');
 }

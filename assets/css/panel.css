@@ -1,21 +1,11 @@
-.panel-admin{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: flex-start;
-}
 
-.name{
-    display: flex;
-    margin-left: 15px;
-    margin-top: 15px;
-    width: 100px;
-    height: 50px;
-}
 
 .img-saved{
     width: 500px;
     height: 500px;
+    background-color: #F4F3F3;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .alimentador{
@@ -23,10 +13,14 @@
     justify-content: center;
     background-color: #F4F3F3;
     border-radius: 10px;
+    font-family: "Akwe Pro", Light;
 }
 .cont-images{
     display: flex;
     justify-content: center;
+    font-family: "Akwe Pro", Light;
+    margin-bottom: 20px;
+    padding: 15px;
 }
 
 .slider{
@@ -36,6 +30,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-family: "Akwe Pro", Light;
+}
+
+.slider h2{
+    font-family: 'Akwe Pro', Medium;
 }
 
 .btn-panel{

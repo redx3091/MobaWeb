@@ -44,6 +44,10 @@ class Slider{
         $imagenes = $this->db->query("SELECT * FROM slider ORDER BY id");
         return $imagenes;
     }
+    public function getOneImage($id){
+        $imagenes = $this->db->query("SELECT imagen FROM slider WHERE id=$id");
+        return $imagenes->fetch_object();  
+    }
 
     public function getAll($limit){
         $imagenes = $this->db->query("SELECT * FROM slider ORDER BY id DESC LIMIT $limit");

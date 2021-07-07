@@ -84,6 +84,10 @@ class pedidoController{
             $productos_pedido = new Pedido();
             $productos = $productos_pedido->getProductosByPedido($id_pedido->id);
         }
+
+        if(isset($_SESSION['carrito'])){
+            Utils::deleteSession('carrito');
+        }
         
         // var_dump($_SESSION['id']);
         require_once 'views/pedido/confirmado.php';

@@ -1,10 +1,4 @@
-<section class="panel-admin">
-    <div class="name">
-        <?php if(isset($_SESSION['identity'])): ?>
-            <h3><?= $_SESSION['identity']->nombre ?></h3>
-        <?php endif; ?>
-    </div>
-</section>
+
 <section class="slider">
     <h2>Cargar imágenes al carrusel</h2><br>
     <?php if (isset($_SESSION['imagen']) && $_SESSION['imagen'] == 'complete') : ?>
@@ -29,7 +23,11 @@
         <strong class="alert_red"> El registro NO se ha borrado correctamente </strong>
     <?php endif; ?>
     <?php Utils::deleteSession('delete'); ?>
-        <table class="tabla-img-sldier">
+        <div class="filterbox" >
+            <label for="buscar">Buscar</label>
+            <input type="text" name="buscar" id="filterBox">
+        </div>
+        <table id="table-gest" class="tabla-img-sldier">
             <tr>
                 <th>ID</th>
                 <th>Imagen</th>
@@ -37,7 +35,7 @@
             <?php while($imagen = $imagenes->fetch_object()): ?>
                 <tr>
                     <td><?= $imagen->id; ?></td>
-                    <td><img src="<?= base_url ?>uploads/images/<?= $imagen->imagen ?>" class="thumb" alt=""></td>
+                    <td> <a href="<?= base_url ?>uploads/images/<?= $imagen->imagen ?>" download><img src="<?= base_url ?>uploads/images/<?= $imagen->imagen ?>" class="thumb" alt=""> </a> </td>
                     <td>
                         <a href="<?= base_url ?>slider/eliminar&id=<?= $imagen->id ?>" class="button-gestion button-red">Eliminar</a>
                     </td>

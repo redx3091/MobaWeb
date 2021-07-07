@@ -10,6 +10,8 @@
     <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <title>Moba</title>
+    <link href="http://fonts.cdnfonts.com/css/source-serif-pro" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/akwe-pro" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url ?>assets/css/text-inicio.css">
     <link rel="stylesheet" href="<?= base_url ?>assets/css/fonts.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -41,7 +43,6 @@
     <link rel="stylesheet" href="<?= base_url ?>assets/css/detalle-ped.css">
     <link rel="stylesheet" href="<?= base_url ?>assets/css/view-history.css">
     <link rel="stylesheet" href="<?= base_url ?>assets/css/mis_pedidos.css">
-    <link rel="stylesheet" href="<?= base_url ?>assets/css/slider-pro.min.css">
     <link rel="stylesheet" href="<?= base_url ?>assets/css/slider.css">
     <link 
         rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"

@@ -13,11 +13,27 @@ class sliderController{
         require_once 'views/admin/panelAdmin.php';
     }
 
-    public function gestion(){
+    public function descargar(){
 		Utils::isAdmin();
+        var_dump($_GET['file']);
+        $name = $_GET['file'];
+   // Remote image URL$ch = curl_init($url_to_image);
+        $url = base_url. 'uploads/images/'. $name;
+        $ch = curl_init($url);
+
+$filename = basename($url);
+
+$fp = fopen('uploads/images'. $name, 'wb');
+
+curl_setopt($ch, CURLOPT_FILE, $fp);
+curl_setopt($ch, CURLOPT_HEADER, 0);
+curl_exec($ch);
+curl_close($ch);
+fclose($fp);
+    }
 
 		
-	}
+
 
     //funcion para guardar imagenes carrucel
     public function save(){

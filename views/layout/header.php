@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="<?= base_url ?>assets/css/text-inicio.css">
     <link rel="stylesheet" href="<?= base_url ?>assets/css/fonts.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="<?= base_url ?>assets/css/carrucel.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url ?>assets/css/styles.css">
@@ -42,6 +41,8 @@
     <link rel="stylesheet" href="<?= base_url ?>assets/css/detalle-ped.css">
     <link rel="stylesheet" href="<?= base_url ?>assets/css/view-history.css">
     <link rel="stylesheet" href="<?= base_url ?>assets/css/mis_pedidos.css">
+    <link rel="stylesheet" href="<?= base_url ?>assets/css/slider-pro.min.css">
+    <link rel="stylesheet" href="<?= base_url ?>assets/css/slider.css">
     <link 
         rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -70,7 +71,11 @@
 <?php endif; ?>
         <!-- MENU -->
         <nav id="menu" class="menu">
-            <ul class="nav">
+            <div class="control-menu">
+                <a href="#menu" class="open"><span>Menu</span></a>
+                <a href="#" class="close"><span>Cerras menu</span></a>
+            </div>
+            <ul class="nav-items">
                 <?php if(isset($_SESSION['admin'])): ?>
                     <li id="inicio">
                         <a href="<?= base_url ?>slider/panel">Panel Slider</a>

@@ -1,8 +1,12 @@
-.nav {
+.nav-items{
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+}
+.control-menu{
+  height: 0px;
+  overflow: hidden;
 }
 ul {
   list-style: none;
@@ -40,9 +44,51 @@ ul li a {
 }
 
 @media screen and (max-width: 900px) {
-  .nav {
-    margin-top: 12px;
+  .nav-items{
+    display: block;
+    height: 0px;
+    overflow: hidden;
   }
+.nav-items li {
+  padding-bottom: 10px;
+}
+  .control-menu{
+    height: 20px;
+    overflow: visible;
+    text-align: center;
+    background-color: #ffcb05;
+    margin-top: 15px;
+  }
+  .control-menu a{
+    text-decoration: none;
+    color: #434142;
+    font-family: "Akwe Pro", Light;
+  }
+  #menu:target .nav-items{
+    height: 15.8em;
+  }
+  .close{
+    display: none;
+  }
+  #menu:target .open{
+    display: none;
+  }
+  #menu:target .close{
+    display: block;
+  }
+
+  #menu:target .nav-items{
+    background-color: #f0f0f0 repeat scroll 0 0;
+    height: 15.8em;
+    transition: height 0.4s ease-in-out 0s, backgroud-color 0.9s ease 0s;
+  }
+  ul.nav-items{
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease-in-out 0s, backgroud-color 0.9s ease 0s;
+  }
+
   ul li {
     text-align: center;
     padding: 0px;
@@ -51,8 +97,9 @@ ul li a {
     padding: 6px;
     font-size: 14px;
   }
-  .flotante{
-    /* bottom: 630px;
-    right: 30px; */
+
+
+  .flotante img{
+    width: 30px;
   }
 }

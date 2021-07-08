@@ -37,9 +37,9 @@
     <?php while($producto = $productos->fetch_object()): ?>
         <div class="producto-tienda">
             <a href="<?= base_url ?>producto/ver&id_p=<?= $producto->id_p ?>"><img class="img-producto-tienda" src="<?= base_url ?>uploads/imgproduct/<?= $producto->imagen ?>" alt=""></a>
-            <h3><?= $producto->nombre ?></h3>
-            <p><?= $producto->tipo ?></p>
-            <p class="precio-tienda">$ <?= $producto->precio ?></p>
+            <p class="titl-tienda"><?= $producto->nombre ?></p>
+            <p class="tip-pro"><?= $producto->tipo ?></p>
+            <h3 class="precio-tienda">$ <?= $producto->precio ?></h3>
             <a href="<?= base_url ?>carrito/add&id_p=<?= $producto->id_p ?>" class="btn-anadir">Al carrito</a>
         </div>
         

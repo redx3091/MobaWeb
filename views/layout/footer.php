@@ -1,4 +1,30 @@
         <!-- PIE DE PAGINA -->
+
+        <div class="fab-container">
+            <div class="fab fab-icon-holder">
+                <img src="<?= base_url ?>assets/img/whatsapp.png" class="whats-btn">
+            </div>
+
+            <ul class="fab-options">
+                <li>
+                    <span class="fab-label">Colombia</span>
+                    <div class="fab-icon-holder">
+                        <a href="https://wa.me/+573185168043"><img class="whats-img" src="<?= base_url ?>assets/img/colombia.png" alt="flag-colombia"></a>
+                        <!-- <i class="fas fa-file-alt"></i> -->
+                    </div>
+                </li>
+                <li>
+                    <span class="fab-label">USA</span>
+                    <div class="fab-icon-holder">
+                    <a href="https://wa.me/+14157561436"><img class="whats-img" src="<?= base_url ?>assets/img/usa.png" alt="flag-USA"></a>
+                    </div>
+                </li>
+            </ul>
+	    </div>
+            
+        <!-- <a href='https://wa.me/+1 (415) 756-1436' class='whatsapp' rel='noopener noreferrer' target='_blank'>
+			<img class='whatsapp-icon' src="<?= base_url ?>assets/img/whatsapp-brands.svg" alt='boton de whatsapp' />
+		</a> -->
         <footer id="footer" class="footer">
             <div class="img-footer">
                 <img src="<?= base_url ?>assets/img/Logo-03.png" alt="Logo">

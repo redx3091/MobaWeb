@@ -10,6 +10,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <title>Moba</title>
+    <link rel="shortcut icon" href="<?= base_url ?>assets/img/favicon-moba.png">
     <link href="http://fonts.cdnfonts.com/css/source-serif-pro" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/akwe-pro" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url ?>assets/css/text-inicio.css">
@@ -44,6 +45,7 @@
     <link rel="stylesheet" href="<?= base_url ?>assets/css/view-history.css">
     <link rel="stylesheet" href="<?= base_url ?>assets/css/mis_pedidos.css">
     <link rel="stylesheet" href="<?= base_url ?>assets/css/slider.css">
+    <link rel="stylesheet" href="<?= base_url ?>assets/css/whats.css">
     <link 
         rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -55,7 +57,7 @@
     <!-- container start -->
     <section id="container" class="container">
         <!-- CABECERA -->
-        <header id="header" class="header">
+        <header  class="header">
             <div id="logo">
                 <a href="<?= base_url ?>inicio/index">Moba</a>
                 <img class="img-header" src="<?= base_url ?>assets/img/linea-moba-02.png" alt="linea-moba">
@@ -67,7 +69,7 @@
 
 <?php else: ?>    
     <div  class="container-btn-carrito">
-        <a href="<?= base_url ?>carrito/index" class="flotante"><img src="<?= base_url ?>assets/img/cart-plus-solid.svg" alt=""></a>
+        <a href="<?= base_url ?>carrito/index" class="flotante"><img src="<?= base_url ?>assets/img/carrito.png" alt=""></a>
     </div>
 <?php endif; ?>
         <!-- MENU -->

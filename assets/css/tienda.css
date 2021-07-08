@@ -11,14 +11,14 @@
     margin-top: 30px;
     margin-block-start: 30px;
     justify-content: flex-end;
-    margin-left: 1134px;
+    margin-left: 1055px;
 }
 
 .producto-container{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding-left: 100px;
+    grid-template-columns: repeat(4, 320px);
+    justify-content: center;
 }
 
 .producto-tienda{
@@ -27,13 +27,23 @@
 }
 
 .precio-tienda{
-    font-family: "Akwe Pro", Medium;
-    color: #434142e3;
-    font-size: 17px;
-}
-.producto-tienda h3{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: "Akwe Pro", Bold;
     color: #434142e3;
     font-size: 20px;
+}
+.titl-tienda{
+    padding-top: 10px;
+    color: #434142e3;
+    font-family: "Akwe Pro", Light;
+    font-size: 17px;
+}
+.tip-pro{
+    padding-top: 3px;
+    font-size: 20px;
+    color: #434142e3;
+    font-family: "Akwe Pro", Medium;
 }
 
 .img-producto-tienda{

@@ -4,16 +4,16 @@
     <?php if($pedido): ?>
         <?php if(isset($_SESSION['admin'])): ?>
             <div class="cambio-estado">
-                <h3>Cambiar estado del pedido</h3>
+                <h3 class="esta-cambiar">Cambiar estado del pedido</h3>
                 <form action="<?= base_url ?>pedido/estado" method="POST">
                     <input type="hidden" value="<?= $pedido->id ?>" name="pedido_id">
-                    <select name="estado" id="">
+                    <select name="estado" id="" class="select-estado">
                         <option value="confirm" <?= $pedido->estado == "confirm" ? 'selected' : '';?>>Pendiente</option>
                         <option value="preparation" <?= $pedido->estado == "preparation" ? 'selected' : '';?>>En preparación</option>
                         <option value="ready" <?= $pedido->estado == "ready" ? 'selected' : '';?>>Preparado para envió y recolección</option>
                         <option value="sended" <?= $pedido->estado == "sended" ? 'selected' : '';?>>Enviado</option>
                     </select>
-                    <input type="submit" value="Cambiar Estado">
+                    <input type="submit" value="Cambiar Estado" class="btn-estado">
                 </form>
             </div>
 
@@ -61,7 +61,7 @@
                     </table>
                 <?php endif; ?>
                 <div class="tabla-det-prod">
-                    <h3> Productos:</h3>
+                    <h3 class="title-det-prod"> Productos:</h3>
                     <table class="det-prod">
                         <tr>
                             <th>Imagen</th>

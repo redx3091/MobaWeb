@@ -106,12 +106,13 @@ class pedidoController{
         Utils::isAdmin();
         if(isset($_POST['pedido_id']) && isset($_POST['estado'])){
             //recolecion datos formulario 
+            // var_dump($_POST);
             $id = $_POST['pedido_id'];
             $estado = $_POST['estado'];
 
             //update del pedido
             $pedido = new pedido();
-            
+            $pedido->setId($id);
             $pedido->setEstado($estado);
             $pedido= $pedido->edit();
 

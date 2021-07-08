@@ -1,5 +1,14 @@
 <section class="confirmado-pedido">
 <?php if(isset($_SESSION['pedido']) && $_SESSION['pedido'] == 'complete'): ?>
+     <script>
+        window.onload = function(){
+            swal.fire(
+                'Su Pedido se ha creado!',
+                'En esta sección podrá revisar sus datos y sus productos comprado!',
+                'success'
+            );
+        }
+    </script>
     <?php $id_pedido = $_SESSION['id']; ?>
     <div class=" mensaje-confirmado">
         <h1>Tu pedido se ha confirmado</h1>

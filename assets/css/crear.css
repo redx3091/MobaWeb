@@ -6,11 +6,22 @@
     align-items: center;
     flex-direction: column;
 }
+.tilt-crear-pro{
+    font-family: "Akwe Pro", Medium;
+    font-size: 25px;
+    color: #434142;
+}
 
 .form-crear{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+.text-descr{
+    font-family: "Akwe Pro", Light;
+    border-radius: 20px;
+    border: 0px;
+    color: #434142;
 }
 
 .crear{
@@ -19,7 +30,7 @@
     color: #434142;
     background-color: #F4F3F3;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     font-family: "Akwe Pro", Light;
     height: auto;
     display: flex;
@@ -32,7 +43,9 @@
     margin-bottom: 10px;
     height: 30px;
     border: 0px;
-    border-radius: 10px;
+    color: #434142;
+    border-radius: 20px;
+    font-family: "Akwe Pro", Light;
 }
 
 .crear select{
@@ -40,12 +53,15 @@
     margin-bottom: 10px;
     height: 30px;
     border: 0px;
-    border-radius: 10px;
+    color: #434142;
+    border-radius: 20px;
+    font-family: "Akwe Pro", Light;
 }
 
 .btn-crear{
     cursor: pointer;
     text-align: center;
+    color: #434142;
     margin-left: 170px;
     border-radius: 30px !important;
     background-color: #ffcb05;

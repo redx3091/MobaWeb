@@ -6,10 +6,39 @@
     align-items: center;
     justify-content: center;
 }
-
+.select-estado{
+    border: 0px;
+    background-color: #F4F3F3;
+    border-radius: 20px;
+    height: 30px;
+    font-family: "Akwe Pro", Light;
+}
+.btn-estado{
+    cursor: pointer;
+    justify-content: center;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    margin-left: 99px;
+    margin-top: 30px;
+    background-color: #ffcb05;
+    border: 0px;
+    font-family: "Akwe Pro", Light;
+}
 .detalle-pedido h1{
     font-family: "Akwe Pro", Medium;
+    color: #434142;
     font-size: 25px;
+}
+.esta-cambiar{
+    font-family: "Akwe Pro", Medium;
+    color: #434142;
+    font-size: 19px;
+}
+.title-det-prod{
+    font-family: "Akwe Pro", Medium;
+    color: #434142;
+    font-size: 19px;
 }
 
 .cambio-estado{
@@ -34,14 +63,19 @@
     text-align: justify;
     background-color: #F4F3F3;
     border-radius: 20px;
+    padding: 20px;
 }
 
 .dat-envio th{
     height: 40px;
+    font-family: "Akwe Pro", Medium;
+    color: #434142;
 }
 .dat-envio td{
     height: 50px;
     border-top: 1px solid rgb(233, 233, 233);
+    font-family: "Akwe Pro", Light;
+    color: #434142;
 }
 
 .det-prod{
@@ -51,14 +85,19 @@
     border-spacing: 0px !important;
     background-color: #F4F3F3;
     border-radius: 20px;
+    padding: 20px;
 }
 
 .det-prod th {
     height: 40px;
+    font-family: "Akwe Pro", Medium;
+    color: #434142;
 }
 
 .det-prod td{
     border-top: 1px solid rgb(233, 233, 233);
+    font-family: "Akwe Pro", Light;
+    color: #434142;
 }
 
 @media screen and (max-width: 900px) {

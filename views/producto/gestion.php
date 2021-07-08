@@ -5,16 +5,48 @@
 </div>
 
     <?php if (isset($_SESSION['producto']) && $_SESSION['producto'] == 'complete') : ?>
-        <strong class="alert_green"> El producto se ha creado correctamente </strong>
+        <script>
+            window.onload = function(){
+                swal.fire(
+                    'Producto Creado!',
+                    'Se ha creado o editado el producto correctamente!',
+                    'success'
+                );
+            }
+        </script>
     <?php elseif (isset($_SESSION['producto']) && $_SESSION['producto'] != 'complete') : ?>
-        <strong class="alert_red"> El registro NO se ha creado correctamente </strong>
+        <script>
+            window.onload = function(){
+                swal.fire(
+                    'Producto no creado!',
+                    'No se ha podido crear o editar el producto correctamente!',
+                    'error'
+                );
+            }
+        </script>
     <?php endif; ?>
     <?php Utils::deleteSession('producto'); ?>
 
     <?php if (isset($_SESSION['delete']) && $_SESSION['delete'] == 'complete') : ?>
-        <strong class="alert_green"> El producto se ha borrado correctamente </strong>
+        <script>
+            window.onload = function(){
+                swal.fire(
+                    'Borrado!',
+                    'Se ha borrado un producto!',
+                    'success'
+                );
+            }
+        </script>
     <?php elseif (isset($_SESSION['delete']) && $_SESSION['delete'] != 'complete') : ?>
-        <strong class="alert_red"> El registro NO se ha borrado correctamente </strong>
+        <script>
+            window.onload = function(){
+                swal.fire(
+                    'No se ha podido eliminar!',
+                    '',
+                    'error'
+                );
+            }
+        </script>
     <?php endif; ?>
     <?php Utils::deleteSession('delete'); ?>
 <div class="table-gestion">

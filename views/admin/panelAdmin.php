@@ -2,9 +2,25 @@
 <section class="slider">
     <h2>Cargar imágenes al carrusel</h2><br>
     <?php if (isset($_SESSION['imagen']) && $_SESSION['imagen'] == 'complete') : ?>
-        <strong class="alert_green">La imagen se ha subido correctamente!!</strong>
+        <script>
+            window.onload = function(){
+                swal.fire(
+                    'Imagen subida!',
+                    'Se ha subido la imagen correctamente!',
+                    'success'
+                );
+            }
+        </script>
     <?php elseif (isset($_SESSION['imagen']) && $_SESSION['imagen'] != 'complete') : ?>
-        <strong class="alert_red">La imagen no se ha subido correctamente</strong>
+        <script>
+            window.onload = function(){
+                swal.fire(
+                    'Imagen no Subida!',
+                    'No se ha subido la imagen correctamente!',
+                    'error'
+                );
+            }
+        </script>
     <?php endif; ?>
     <?php Utils::deleteSession('imagen'); ?>
     <div class="alimentador">
@@ -18,9 +34,25 @@
 <section class="cont-images">
     <div class="img-saved">
     <?php if (isset($_SESSION['delete']) && $_SESSION['delete'] == 'complete') : ?>
-        <strong class="alert_green"> El producto se ha borrado correctamente </strong>
+        <script>
+            window.onload = function(){
+                swal.fire(
+                    'Imagen Eliminada!',
+                    'Se ha eliminado la imagen correctamente!',
+                    'success'
+                );
+            }
+        </script>
     <?php elseif (isset($_SESSION['delete']) && $_SESSION['delete'] != 'complete') : ?>
-        <strong class="alert_red"> El registro NO se ha borrado correctamente </strong>
+        <script>
+            window.onload = function(){
+                swal.fire(
+                    'No se ha podido eliminar!',
+                    'No Se ha eliminado la imagen correctamente!',
+                    'success'
+                );
+            }
+        </script>
     <?php endif; ?>
     <?php Utils::deleteSession('delete'); ?>
         <div class="filterbox" >

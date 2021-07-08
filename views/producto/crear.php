@@ -3,7 +3,7 @@
     <h1>Editar producto <?= $pro->nombre ?></h1>
     <?php $url_action = base_url . "producto/save&id_p=" . $pro->id_p; ?>
 <?php else : ?>
-    <h1>Crear nuevo producto</h1>
+    <h1 class="tilt-crear-pro">Crear nuevo producto</h1>
     <?php $url_action = base_url . "producto/save"; ?>
 <?php endif; ?>
     <div class="form-crear">
@@ -12,7 +12,7 @@
             <input type="text" name="nombre" value="<?= isset($pro) && is_object($pro) ? $pro->nombre : ''; ?>">
 
             <label for="descripcion">Descripción</label>
-            <textarea name="descripcion"><?= isset($pro) && is_object($pro) ? $pro->descripcion : ''; ?></textarea>
+            <textarea name="descripcion" class="text-descr" ><?= isset($pro) && is_object($pro) ? $pro->descripcion : ''; ?></textarea>
 
             <label for="precio">Precio</label>
             <input type="text" name="precio" value="<?= isset($pro) && is_object($pro) ? $pro->precio : ''; ?>">
@@ -35,7 +35,7 @@
                 <img src="<?= base_url ?>uploads/imgproduct/<?= $pro->imagen ?>" width="100px">
             <?php endif; ?>
             <input type="file" name="imagen" class="up-img">
-            <input type="submit" value="Guardar" class="btn-crear">
+            <input type="submit" value="Guardar" class="btn-crear" id="btn-guardar">
         </form>
     </div>
 </section>

@@ -216,7 +216,9 @@ class Pedido{
 
 
         $save = $this->db->query($sql);
-
+        // echo $sql;
+        // echo $this->db->error;
+        // die();
         $result = false;
         if ($save) {
             $result = true;

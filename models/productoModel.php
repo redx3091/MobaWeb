@@ -154,7 +154,7 @@ class Producto{
             $sql .= ", imagen='{$this->getImagen()}'";
         }
 
-        $sql .= " WHERE id_p={$this->id};";
+        $sql .= " WHERE id_p={$this->id_p};";
 
 
         $save = $this->db->query($sql);
